@@ -2,12 +2,12 @@ const webpack = require("webpack");
 const path = require("path");
 
 module.exports = {
-    // devtool: "source-map",
+    devtool: "source-map",
+    mode: "development",
     entry: {
-        swiper: "./swiper.js"
+        index: "./index.js"
     },
     output: {
-        libraryTarget: "umd",
         path: path.resolve(__dirname, "dist"),
         filename: "[name].js",
         publicPath: "/"
@@ -25,11 +25,15 @@ module.exports = {
                         ]
                     }
                 }],
-                // exclude: /node_modules/,
+                exclude: /node_modules/,
             }
         ]
     },
     optimization: {
       minimize: true
-    }
+    },
+    watchOptions: {
+      poll:1000,
+      ignored:/node_modules/,
+    },
 }

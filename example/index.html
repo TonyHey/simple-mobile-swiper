@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size:100px">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+    <style>
+        body {
+          font-size: 0.16rem;
+        }
+        #swiper_wrapper {
+            width: 80vw;
+            height: 300px;
+            background-color: yellow;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+        .swiper_container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+        .swiper_item {
+            min-width: 200px;
+            min-height: 150px;
+            margin-right: 10px;
+            background-color: red;
+        }
+        .swiper_pagination {
+            position: absolute;
+            bottom: 8px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .swiper-pagination-bullet {
+          width: 10px;
+          height: 10px;
+          display: inline-block;
+          background-color: gray;
+          border-radius: 50%;
+          margin: 0 4px;
+        }
+        .swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background-color: black;
+        }
+    </style>
+    <!-- <div style="width: 100%; height: 600px;">123</div> -->
+    <div id="swiper_wrapper">
+        <div class="swiper_container">
+            <div class="swiper_item">1</div>
+            <div class="swiper_item">2</div>
+            <div class="swiper_item">3</div>
+            <div class="swiper_item">4</div>
+            <div class="swiper_item">5</div>
+            <div class="swiper_item">6</div>
+            <div class="swiper_item">7</div>
+            <div class="swiper_item">8</div>
+            <div class="swiper_item">9</div>
+            <div class="swiper_item">10</div>
+        </div>
+        <div class="swiper_pagination"></div>
+    </div>
+    <!-- <div style="width: 100%; height: 1200px;">456</div> -->
+    <!-- <script type="text/javascript" src="./node_modules/simple-mobile-swiper/src/swiper.js"></script> -->
+    <script src="https://tonyhey.github.io/simple-mobile-swiper/example/dist/index.js"></script>
+</body>
+</html>

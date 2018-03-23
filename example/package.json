@@ -1,22 +1,18 @@
 {
-  "name": "simple-mobile-swiper",
-  "version": "1.1.5",
-  "description": "a simple swiper for mobile device",
-  "main": "dist/swiper.js",
+  "name": "test-npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clear": "rimraf dist",
-    "build": "npm run clear && webpack --mode=production"
+    "serve": "serve -l 3100",
+    "start": "npm run clear && webpack --watch"
   },
-  "keywords": [
-    "mobile",
-    "swiper"
-  ],
-  "author": "Tony",
+  "author": "",
   "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/TonyHey/simple-mobile-swiper"
+  "dependencies": {
+    "simple-mobile-swiper": "^1.1.5"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -24,6 +20,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-0": "^6.24.1",
     "rimraf": "^2.6.2",
+    "serve": "11.0.2",
     "webpack": "^4.16.4",
     "webpack-cli": "^3.1.0"
   }
