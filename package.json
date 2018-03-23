@@ -1,0 +1,26 @@
+{
+  "name": "simple-mobile-swiper",
+  "version": "1.1.1",
+  "description": "a simple swiper for mobile device",
+  "main": "dist/swiper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mobile",
+    "swiper"
+  ],
+  "author": "Tony",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TonyHey/simple-mobile-swiper"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "webpack": "^3.9.1"
+  }
+}
